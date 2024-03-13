@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="scene.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1">
+      <button class="Hotspot" slot="hotspot-2" data-position="-0.6233522841360969m 3.208951746320065m -5.341342968044501m" data-normal="0.169612969182682m 0.9805774993330721m 0.09848455963618627m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Queen
+          </div>
+      </button><button class="Hotspot" slot="hotspot-4" data-position="2.3901919309912896m 2.713765553355973m -5.631650811217093m" data-normal="0m 0.5985589295082265m -0.8010787775905475m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Bishop
+          </div>
+      </button><button class="Hotspot" slot="hotspot-5" data-position="5.410088648760675m 2.6517030086581324m -5.448890608212759m" data-normal="0m 0.9999999999999911m -1.3435886114798734e-7m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Rock
+          </div>
+      </button><button class="Hotspot" slot="hotspot-7" data-position="-4.027093179681838m 2.4641136542089273m 5.356762408911046m" data-normal="-0.9823308599234157m 0.15096556639360378m -0.11061410129626764m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Knight
+          </div>
+      </button><button class="Hotspot" slot="hotspot-9" data-position="-0.7904506817278951m 3.2675764155023854m 5.45898953162415m" data-normal="0m 0.8995578292225431m 0.4368016848461395m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">King</div>
+      </button><button class="Hotspot" slot="hotspot-10" data-position="3.860271380316397m 2.6903446724890143m 3.9715916861921197m" data-normal="0m 0.9640335698457705m 0.26578050381926077m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Pawn</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+  </body>
+</html>
